@@ -1,5 +1,9 @@
 function modify(userInput) {
-  return userInput;
+  if (isNaN(userInput)){
+    return 'Please enter a valid number';
+  } else {
+    return userInput;
+  }
 };
 
 
