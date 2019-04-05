@@ -1,13 +1,13 @@
 
 function modify(userInput) {
 
-  if (isNaN(userInput)){
+ if (isNaN(userInput)){
     return 'Please enter a valid number';
   } else {
     return userInput;
+
   }
 }
-
 
 $(document).ready(function() {
   $('form#beepBoop').submit(function(event) {
