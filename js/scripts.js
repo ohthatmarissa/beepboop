@@ -1,10 +1,12 @@
+
 function modify(userInput) {
+
   if (isNaN(userInput)){
     return 'Please enter a valid number';
   } else {
     return userInput;
   }
-};
+}
 
 
 $(document).ready(function() {
