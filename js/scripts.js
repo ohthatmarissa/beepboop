@@ -1,57 +1,34 @@
-
-
-
-
-
 $(document).ready(function() {
   $('form#beepBoop').submit(function(event) {
     event.preventDefault();
 
-  var userInput = parseInt($('input#number').val());
-  var result = modify(userInput);
-  $('#result').text(result);
+    var userInput = parseInt($('input#number').val());
+    var result = modify(userInput);
+    $('#result').text(result);
 
-
-  function modify(userInput) {
-    if (isNaN(userInput))
-      return 'Please enter a valid number';
-    else
-  // var oneTwoThree = [1, 2, 3];
-    var resultString = '';
-    for (var i = 0; i <= userInput; i++) {
-
-      if (i.toString().indexOf('3') > -1) {
-        resultString = resultString + "i'm sorry Dave, ";
-      }
-      else if (i.toString().indexOf('2') > -1) {
-        resultString = resultString + "Boop, ";
-      }
-      else if (i.toString().indexOf('1') > -1) {
-        resultString = resultString + "Beep, ";
+    function modify(userInput) {
+      if (isNaN(userInput)) {
+        return 'Please enter a valid number';
       }
       else {
-        resultString = resultString + i.toString() + ", ";
+        var resultArray = [];
+        for (var i = 0; i <= userInput; i++) {
+          var counterString = i.toString();
+          if (counterString.includes('3')) {
+            resultArray.push("Im sorry Dave");
+          }
+          else if (counterString.includes('2')) {
+            resultArray.push("Boop");
+          }
+          else if (counterString.includes('1')) {
+            resultArray.push("Beep");
+          }
+          else {
+            resultArray.push(counterString);
+          }
+        }
+        return resultArray.join(", ");
       }
-
-      // if (i.toString().indexOf('3') > -1)
-      //   resultString = "im sorry Dave., ";
-      //   console.log('im sorry Dave.');
-      // else if ((i.toString()).indexOf('2') > -1)
-      //   resultString = resultString +'boop, ';
-      //   console.log('boop');
-      // else if ((i.toString()).indexOf('1') > -1)
-      //   resultString+'beep, ';
-      //   console.log('beep');
-      // else
-      //   resultString+i.toString();
-      //   console.log(i);
-
-
     }
-
-    return resultString;
-  }
-
-
   });
 });
