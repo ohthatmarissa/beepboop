@@ -1,7 +1,16 @@
 .btn {
-  background-color: pink;
+  background-color: white;
 }
 
 body {
-  background-color: #ccffe6
+  background-image: url(https://miro.medium.com/max/684/1*_6U_4WuYRP35vf2YbKJV6w.png);
+}
+
+.container {
+  position: absolute;
+  top: 300px;
+  left: 65px;
+  text-align: center;
+  background-color: pink;
+
 }
