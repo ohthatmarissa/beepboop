@@ -1,6 +1,6 @@
 # Beep Bopp Number Modifier
 
-#### A program that allows users to input a number and return a range of numbers with some surprising modifications. 4/5/19
+#### A program that allows users to input a number and return a range of numbers with some surprising modifications. 4/5/19. Check it out: https://ohthatmarissa.github.io/beepboop/
 
 #### By **Marissa Perry**
 
@@ -44,4 +44,4 @@ _Email me with any questions, comments, or concerns. ohthatmarissa@gmail.com_
 
 *{This software is licensed under the MP license}*
 
-Copyright (c) 2017 **_{Marissa Perry}_**
+Copyright (c) 2019 **_{Marissa Perry}_**
